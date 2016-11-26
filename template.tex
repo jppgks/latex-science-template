@@ -14,6 +14,7 @@
 	\pagebreak
 	
 	\section{Useful snippets}
+	
 	\subsection{Math}
 	Let's write some random math.
 	% Some math on a new line
@@ -28,4 +29,18 @@
 		\end{split}
 	\end{equation}
 	
+	\subsection{Algorithm}
+	\begin{algorithm}[H]
+		$R:=\emptyset$\;
+		$L(a):=0$\;
+		$\forall v\neq a:L(v):=\infty$\;
+		\While{$z\notin R$}{
+			choose $v\in V\backslash R$ with lowest $L(v)$\;
+			$R:=R\cup\{v\}$\;
+			\ForEach{edge $(v,v')\in E$ with $v'\in V\backslash R$}{
+				$L(v'):=min\{L(v)+w(v,v'),L(v')\}$
+			}
+		}
+		\caption{Dijkstra's shortest path algorithm}
+	\end{algorithm}	
 \end{document}
