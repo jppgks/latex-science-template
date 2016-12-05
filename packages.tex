@@ -8,8 +8,6 @@
 \usepackage{hyperref}
 % Environments framed, shaded and leftbar
 \usepackage{framed}
-% Theorem setup
-\usepackage{amsthm}
 % Set all page margins to 1.5cm, option 'headings' sets \pagestyle{headings}
 \usepackage[headings]{fullpage}
 % Set of math symbols
@@ -29,3 +27,10 @@
 \usepackage{tikz}
 % Automata and relative positioning
 \usetikzlibrary{automata,positioning}
+
+% Theorem setup
+
+\usepackage{amsthm}
+% Definition environment with numbered with subsection.
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[subsection]
