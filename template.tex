@@ -53,4 +53,18 @@
 	\begin{proof}
 		Of course, we can't leave the proof out.
 	\end{proof}
+	
+	\subsection{Figure}
+	Let's see what \autoref{fig:plots} looks like. ``Figure 1" in the previous sentence is a clickable reference.
+	% Using the H modifier from the float package to include the figure HERE.
+	\begin{figure}[H]
+		% Center figure
+		\centering
+		% Center caption
+		\captionsetup{justification=centering}
+		% The actual figure
+		\includegraphics[scale=0.2]{assets/plots}
+		% And a nice caption
+		\caption{Example of including an image in a \LaTeX\ document, centered and positioned exactly where it's included in the code.\label{fig:plots}}
+	\end{figure}
 \end{document}
