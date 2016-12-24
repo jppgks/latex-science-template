@@ -1,8 +1,10 @@
 # LaTeX Science Template
-LaTeX template for use in scientific setting (e.g.: university homework).
+LaTeX template for use in scientific setting (e.g.: university assignment).
 
 ### Usage
-Clone this repo in a new directory and configure `template.tex` to your own needs.
+1. Clone this repo in a new directory,
+2. `\input{packages}` in the preamble of `your_document_name.tex`, 
+3. copy snippets from `template.tex` and configure to your own needs.
 
 ### PDF Compilation
-`make`
+`make FILE=your_document_name.tex`
