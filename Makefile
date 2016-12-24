@@ -1,10 +1,10 @@
 # Copyright github.com/NorfairKing
-CLUTTER = *.aux *.fdb_latexmk *.synctex.gz *.fls *.dvi *.log *.out *.toc
+AUX = *.aux *.fdb_latexmk *.synctex.gz *.fls *.dvi *.log *.out *.toc
 
-all: template.pdf clean
+all: compile clean
 
-template.pdf:
-	latexmk -pdf -pdflatex="pdflatex -shell-escape -halt-on-error -enable-pipes -enable-write18" template.tex
+compile:
+	latexmk -pdf -pdflatex="pdflatex -shell-escape -halt-on-error -enable-pipes -enable-write18" $(FILE)
 
 clean:
-	rm -f $(CLUTTER)
+	rm -f $(AUX)
