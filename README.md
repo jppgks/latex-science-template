@@ -1,4 +1,4 @@
-# LaTeX Science Template
+# LaTeX Science Template [![Build Status](https://travis-ci.org/jppgks/latex-science-template.svg?branch=master)](https://travis-ci.org/jppgks/latex-science-template)
 LaTeX template for use in scientific setting (e.g.: university assignment).
 
 ### Usage
