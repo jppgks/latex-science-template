@@ -1,0 +1,17 @@
+sudo: required
+dist: trusty
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended lmodern texlive-science texlive-math-extra pgf
+script:
+- mkdir _build
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build template.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: 6EiXxpqAOH7RziwJas20Y58DsPDAbmbrh565gLvYnRFbN2rlFG+fQrdoo4qSsBny8vceUdV5Sr5vIFo8PxR7xn2PExm4GfpH/6CgpDXDhQ5M7ST4efaEyBMKgX9pPyA37Q9tlgRcmW0y1zfN2ZAUWnmSJsUntTpJviXrzD+VA0vz7DYDIVrjKvBYO7hX4ELg8eWc/DdEqLrwEATggPEKk3Gm/FXya5kW+rMxwA2A49iKwc+Bpjyj7HCkhwjNCdtNhKRIi0J30ONeMVhcoJxG000nJQgNbN4b0dTEZB0CJASL9qPjDbGteG7U2L2ViJLOFJuRxF4Bx63HgYNZ1LM91CRH7im15wIrqGHbfQFsRYU/7fUWqjV9LCyL+dLGqJAmh+vwLM+k42a60UeIkpJNDHnVdUCHlWQSRu4jFDSbFP0UA7r2hWXk1A2P8YCreDwcCkZ+VRkxZGLoZJYD54rmpls0fcZU/RIyuUqALq3+fT+efOCUBU9Rz7Tt7+av47Txkz8/XAC3H1py495jZuyLrLgiWjzHDN+ixuaSKjYVz/dHD83sHMahiVFR+T7gUE9SqWyV3Z20uissVQrbF/thhjMB4pdOHW+pjOjW3mBcfyBq0D3M6mbDBkf5/mUuJYM54UGpeAbKrFVL4ik0D9sspBBNpUg16eBXvDnvwd8xKdU=
+  file: _build/template.pdf
+  skip_cleanup: true
+  on:
+      tags: true
+
