@@ -2,7 +2,7 @@
 LaTeX template for use in scientific setting (e.g.: university assignment).
 
 ### Preview
-A compiled `.pdf` with the example snippets from `template.tex` is available for the latest [release](https://github.com/jppgks/latex-science-template/releases).
+A compiled `.pdf` with the example snippets from `template.tex` is available for the latest [release](https://github.com/jppgks/latex-science-template/releases/latest).
 
 ### Usage
 1. Clone this repo in a new directory,
