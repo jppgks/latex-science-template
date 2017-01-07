@@ -10,4 +10,4 @@ A compiled `.pdf` with the example snippets from `template.tex` is available for
 3. copy snippets from `template.tex` and configure to your own needs.
 
 ### PDF Compilation
-`make FILE=your_document_name.tex`
+`make <your_tex_document_name>.pdf`
