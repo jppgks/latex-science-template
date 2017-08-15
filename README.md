@@ -15,3 +15,5 @@ A compiled `.pdf` with the example snippets from `template.tex` is available for
 ### About
 This project is a little over-engineered, in the sense that it uses continuous integration to compile a single `.pdf` file.
 The goal of this project is mainly educational, hence the extra (arguably redundant) features.
+
+The repository can serve as a template for other (more meaty) LaTeX projects.
