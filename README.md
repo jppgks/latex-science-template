@@ -11,3 +11,7 @@ A compiled `.pdf` with the example snippets from `template.tex` is available for
 
 ### PDF Compilation
 `make <your_tex_document_name>.pdf`
+
+### About
+This project is a little over-engineered, in the sense that it uses continuous integration to compile a single `.pdf` file.
+The goal of this project is mainly educational, hence the extra (arguably redundant) features.
